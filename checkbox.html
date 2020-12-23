@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <!--
+        <input type="checkbox">
+
+        Atributos
+            - globais
+            - value
+                - Se não estiver presente, o padrão é "on"
+            - checked
+                - Para deixar o campo marcado como padrão
+    
+        - Usaremos o atributo "name" com o mesmo nome para os 
+        diversos campos
+            - Recebe => interest=coding, music
+    -->
+
+    <label for="subscribe">Receber notificações</label>
+    <input type="checkbox" name="subscribe" id="subscribe">
+    <input type="checkbox" name="subscribe" id="subscribe" checked>
+
+    <fieldset>
+        <legend>Choose your interests</legend>
+        <div>
+            <input type="checkbox" 
+                name="interest"
+                id="coding"
+                value="coding"
+                checked
+            >
+            <label for="coding">Conding</label>
+        </div>
+        <div>
+            <input type="checkbox"
+                name="interest"
+                id="music"
+                value="music"    
+            >
+            <label for="music">Music</label>
+        </div>
+    </fieldset>
+</body>
+</html>

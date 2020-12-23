@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <!--
+        <button>
+            - Enviar formulários
+            - Estilizado pelo user agente (navegador)
+
+        Atributos
+            - type
+                - submit => Enviar o formulário
+                - reset => Limpar o formulário
+                - button => Alguns navegadores entendem que é para envair 
+            - autofocus => Coloca o foco no botão quando entra na página se só tiver um autofocus
+            - disabled => Desabilita o botão
+            - name => Utilizado quando for receber valores com JS
+            - value => Dado que será recebi pelo backend
+            - form => Vincula o form com o botão
+    -->
+
+    <form id="meu-form" action="">
+        <input type="text" value="Alguma coisa">
+        <button type="submit" name="button" value="Valor qualquer">Enviar</button>
+        <button id="meu-form" type="reset">Resetar</button>
+    </form>
+</body>
+</html>

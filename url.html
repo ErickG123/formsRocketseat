@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL</title>
+</head>
+<body>
+    <!-- 
+        <input type="url">
+
+        Atributo
+        - spellcheck
+            - Habilitar a verificação ortográfica para este input
+    -->
+    <form action="">
+        <input type="url"
+            placeholder="http://example.com.br"
+            pattern=".*\.com\.br.*"
+            title="Somento domínios .com.br serão aceitos"
+            required
+            spellcheck="false"
+        >
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

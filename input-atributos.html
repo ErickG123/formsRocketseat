@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos do Input</title>
+</head>
+<body>
+    <!-- 
+        <input> Atributos comuns
+            - autocomplete => Completa com informações que você já usou
+            - autofocus => O cursor fica no input direto (um por página)
+            - disabled => Desabilita o input
+            - value => Coloca um valor fixo no input
+            - readonly (quase todos) => Somente para leitura
+            - form (quase todos) => Linkar o input com o formulário
+            - name => Ajuda a resgatar dados no backend
+            - required (quase todos) => Torna o input obrigatório
+            - placeholder (quase todos) => "Ajuda" o usuário a saber oque digitar
+    -->
+    <input type="email" autocomplete="email">
+    <input type="text" autofocus>
+    <input type="text" value="XXX" disabled>
+    <input type="text" value="XXX">
+    <input type="text" value="XXX" readonly>
+
+    <form action="" id="meu-form"></form>
+    <input name="nome" type="text" form="meu-form">
+
+    <input type="text" required>
+    <input type="text" placeholder="Nome">
+</body>
+</html>

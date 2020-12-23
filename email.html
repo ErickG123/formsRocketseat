@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <!--
+        <input type="email">
+
+        Atributos
+            - minlength/maxlength
+                - Número máximo ou mínimo de caracteres no campo
+            - size
+                - Número aceitável de caracteres que o campo deverá conter
+            - placeholder
+                - Mostra um exemplo de texto a ser digitado em um campo
+            - readonly/disabled
+                - Indica se o campo está habilitado ou não
+            - required
+                - Torna o campo obrigatório em um formulário
+            - inputmode
+                - Poderá alterar o uso do teclado em smartphones
+                - Exemplo: Queremos só números
+                    - inputmode="numeric"
+            - pattern
+                - Expressão regular para validar o que está sendo digitado 
+                - Exemplo: O domíno deve ser rocketseat.com.br
+                    - pattern=".+@rocketseat\.com\.br"
+            - multiple
+                - O campo irá receber um ou mais emails, separados por vírgulas
+            - list
+                - O id de uma tag <datalist> que esta no mesmo documento
+                - <datalist> irá conter uma lista de valores pré definidos 
+                a fim de sugerir ao usuário, quais valores estão disponíveis
+                    - Os valores do <datalist> que não forem compatíveis com 
+                    o campo, não serão apresentados como sugestão
+            - title
+                - Coloca uma desrição no alerta de erro do input
+        -->
+
+        <form action="">
+            <input type="email"
+                placeholder="Digite seu email"
+                minlength="8"
+                maxlength="40"
+                required
+            >
+
+            <input type="email"
+                placeholder="Digite seus emails"
+                multiple
+            >
+
+            <input type="email"
+                placeholder="Digite seu email da Rocketseat"
+                pattern=".+@rocketseat\.com\.br"
+                title="Somente emails com o domínio @rocketseat.com.be"
+            >
+
+            <datalist id="emails">
+                <option>erick@erick.com</option>
+                <option>erick@rocketseat.com.br</option>
+            </datalist>
+            <input type="email"
+                list="emails"
+            >
+
+            <button type="submit">Enviar</button>
+        </form>
+</body>
+</html>

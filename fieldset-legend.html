@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset-Legend</title>
+</head>
+<body>
+    <!-- 
+        <fieldset>
+            - Agrupamente de campo
+            - Mesmo propósito
+            - Mais semântico 
+            - Mais acessível
+        
+        Atibutos
+        - disabled
+            - Desabilita todos os elementos internos
+            - Não serão enviados ao submeter o formulário
+        - form
+            - O id de um formulário ao qual esse fieldset pertence
+            - Não precisa estar dentro do formulário
+        - name
+            - Nomedo grupo
+
+        <legend>
+            - Nome do agrupamento
+            - Primeiro elemento dentro do fieldset
+    -->
+
+    <form action="">
+        <fieldset disabled>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text" name="" id="">
+        </fieldset>
+    </form>
+
+    <!-- 
+        Os dados do fieldset "contato" será enviado
+        quando o button do form "contato" for clicado
+        por causa do link com o form="contato"
+    -->
+    <form id="contato" action="">
+      <button>Enviar</button>
+    </form>
+    <fieldset form="contato" name="inputs-contact">
+        <legend>Contato</legend>
+        <label for="">Nome</label>
+        <input type="text" name="" id="">
+    </fieldset>
+</body>
+</html>
